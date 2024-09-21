@@ -56,8 +56,7 @@ class InitialState extends GalleryState {
 
 class Store {
   final state = signal<GalleryState>(InitialState());
-  final String url =
-      "https://pixabay.com/api?key=45894553-ffbe65e9b453667035443c8f2";
+  final String url = "https://pixabay.com/api?key=......";
   void searchImages(String query) async {
     state.value = state.value.copyWith(status: Status.loading);
     try {
